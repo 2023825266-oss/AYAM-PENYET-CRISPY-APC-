@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <title>Ayam Penyet Crispy - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN MODAL -->
+<div id="login-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal" id="close-modal">&times;</span>
+    <h2>Welcome to Ayam Penyet Crispy!</h2>
+    <p>Please login or continue as a member.</p>
+
+    <!-- Tabs -->
+    <div class="tab-buttons">
+      <button id="tab-login" class="active-tab">Login</button>
+      <button id="tab-signup">Sign Up</button>
+    </div>
+
+    <!-- Login Form -->
+    <form id="login-form">
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit" class="modal-btn">Login</button>
+    </form>
+
+    <!-- Sign Up Form -->
+    <form id="signup-form" style="display: none;">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit" class="modal-btn">Sign Up</button>
+    </form>
+
+    <button class="modal-btn guest-btn" id="guest-btn">Continue as Guest</button>
+  </div>
+</div>
+
+
+<!-- NAVBAR -->
+<nav class="nav-modern">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <img src="logo.jpg" alt="Logo">
+      <span>Ayam Penyet Crispy</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="location.html">Location</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+     <!-- Social Media Icons -->
+    <div class="nav-social">
+      <a href="https://www.tiktok.com/@ayampenyetcrispyapc?_r=1" target="_blank" rel="noopener">
+        <img src="tiktok.png" alt="TikTok">
+      </a>
+      <a href="https://wa.link/loiij1" target="_blank" rel="noopener">
+        <img src="whatsapp.png" alt="Whatsapp">
+      </a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- HOME -->
+
+<section id="home">
+     <div class="home-slider">
+    <div class="home-slide one"></div>
+    <div class="home-slide two"></div>
+  </div>
+</section>
+
+<section class="hero-video">
+  <!-- Video -->
+  <video autoplay muted loop playsinline class="hero-bg-video">
+    <source src="video1.mov" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+</section>
+
+
+<!-- HIGHLIGHT MENU -->
+
+<section id="menu">
+  <h2>Menu</h2>
+
+  <div class="menu-main-cards">
+
+    <div class="menu-card">
+      <img src="penyetayam.jpg" alt="Penyet">
+      <h4>Penyet Crispy</h4>
+      <a href="menu.html#penyet-crispy" class="see-more-btn">See More</a>
+    </div>
+
+    <div class="menu-card">
+      <img src="gepukayam.jpg" alt="Gepuk">
+      <h4>Gepuk Crispy</h4>
+      <a href="menu.html#gepuk-crispy" class="see-more-btn">See More</a>
+    </div>
+
+    <div class="menu-card">
+      <img src="soto.jpg" alt="Soto">
+      <h4>Soto</h4>
+      <a href="menu.html#soto-bakso" class="see-more-btn">See More</a>
+    </div>
+
+    <div class="menu-card">
+      <img src="bakso.jpg" alt="Bakso">
+      <h4>Bakso</h4>
+      <a href="menu.html#soto-bakso" class="see-more-btn">See More</a>
+    </div>
+
+    <div class="menu-card">
+      <img src="teh.jpg" alt="Drinks">
+      <h4>Drinks</h4>
+      <a href="menu.html#drinks" class="see-more-btn">See More</a>
+    </div>
+
+    <div class="menu-card">
+      <img src="sambalpenyet.jpg" alt="Sambal">
+      <h4>Sambal</h4>
+      <a href="menu.html#sambal" class="see-more-btn">See More</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FEEDBACK SECTION -->
+
+<section class="reviews-section">
+  <h2>Customer Feedback</h2>
+
+  <div class="review-cards">
+
+    <div class="review-card">
+      <div class="review-rating">
+        ★★★★☆
+      </div>
+      <h4>Nurynsyaz</h4>
+      <p>"The Ayam Penyet Crispy is absolutely delicious! Loved the spicy sambal and crispy texture."</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-rating">
+        ★★★★★
+      </div>
+      <h4>Misya Mysara</h4>
+      <p>"Excellent service and the drinks are so refreshing. Highly recommend the Bandung Ais!"</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-rating">
+        ★★★★☆
+      </div>
+      <h4>Fatin Aqilah</h4>
+      <p>"Gepuk Crispy was cooked to perfection. I’ll definitely come back for more."</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-rating">
+        ★★★★☆
+      </div>
+      <h4>Amirah Husni</h4>
+      <p>"Best gepuk crispy I've ever had. Will come back again!"</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-rating">
+        ★★★★★
+      </div>
+      <h4>Hazmira</h4>
+      <p>"Bakso portion is generous and so tasty. Highly recommend!"</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-rating">
+        ★★★★☆
+      </div>
+      <h4>Mardhiah</h4>
+      <p>"Service was friendly, food came out fast, highly satisfied."</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Floating Chatbox -->
+<div id="chatbox">
+  <div id="chat-header">💬 Chat with us</div>
+  <div id="chat-content">
+    <div class="chat-message bot">Hi! How can I help you today?</div>
+  </div>
+  <input type="text" id="chat-input" placeholder="Type a message..." />
+</div>
+
+
+</main>
+
+<footer class="footer-business">
+ <div class="footer-container">
+
+    <!-- ABOUT -->
+    <div class="footer-box">
+      <h4>Ayam Penyet Crispy</h4>
+      <p>
+        A&A Laris Resources is a registered F&B business established in 2023,
+        offering crispy ayam penyet, gepuk, and authentic local flavors.
+      </p>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-box">
+      <h4>Contact Us</h4>
+      <p>📍 Lot 831 Kg. Sungai Hala,<br>Jalan Lama Pasir Puteh,<br>18500 Machang, Kelantan</p>
+      <p>📞 013-9994070</p>
+      <p>✉️ ayampenyetcrispy@gmail.com</p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-box">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- OPENING HOURS -->
+    <div class="footer-box">
+      <h4>Opening Hours</h4>
+      <p>Monday – Sunday</p>
+      <p>12:00 PM – 6:00 PM</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>Created: 1 Jan 2025</p>
+    <p>Last Updated: <span id="last-updated"></span></p>
+    <p id="visitor-count">Visitors: 0</p>
+    <p>&copy; 2025 A&A Laris Resources | Ayam Penyet Crispy | For Educational Purposes Only</p>
+  </div>
+</footer>
+
+<script>
+const modal = document.getElementById('login-modal');
+const closeModal = document.getElementById('close-modal');
+const guestBtn = document.getElementById('guest-btn');
+
+const tabLogin = document.getElementById('tab-login');
+const tabSignup = document.getElementById('tab-signup');
+const loginForm = document.getElementById('login-form');
+const signupForm = document.getElementById('signup-form');
+
+// Show modal on page load
+window.onload = () => modal.style.display = 'flex';
+
+// Close modal
+closeModal.onclick = () => modal.style.display = 'none';
+guestBtn.onclick = () => modal.style.display = 'none';
+
+// Toggle tabs
+tabLogin.onclick = () => {
+  tabLogin.classList.add('active-tab');
+  tabSignup.classList.remove('active-tab');
+  loginForm.style.display = 'flex';
+  signupForm.style.display = 'none';
+};
+
+tabSignup.onclick = () => {
+  tabSignup.classList.add('active-tab');
+  tabLogin.classList.remove('active-tab');
+  signupForm.style.display = 'flex';
+  loginForm.style.display = 'none';
+};
+
+// Form submit demo
+loginForm.onsubmit = (e) => {
+  e.preventDefault();
+  const email = loginForm.querySelector('input[type="email"]').value;
+  const password = loginForm.querySelector('input[type="password"]').value;
+  alert(`Login with Email: ${email}\nPassword: ${password}`);
+};
+
+signupForm.onsubmit = (e) => {
+  e.preventDefault();
+  const name = signupForm.querySelector('input[type="text"]').value;
+  const email = signupForm.querySelector('input[type="email"]').value;
+  const password = signupForm.querySelector('input[type="password"]').value;
+  alert(`Sign Up with Name: ${name}\nEmail: ${email}\nPassword: ${password}`);
+};
+
+    
+window.addEventListener("scroll", () => {
+  const nav = document.querySelector(".nav-modern");
+  nav.classList.toggle("scrolled", window.scrollY > 50);
+});
+
+const chatHeader = document.getElementById("chat-header");
+const chatBox = document.getElementById("chatbox");
+const chatContent = document.getElementById("chat-content");
+const chatInput = document.getElementById("chat-input");
+
+// Toggle chat open/close
+chatHeader.addEventListener("click", () => {
+  if (chatContent.style.display === "none") {
+    chatContent.style.display = "flex";
+    chatInput.style.display = "block";
+  } else {
+    chatContent.style.display = "none";
+    chatInput.style.display = "none";
+  }
+});
+
+// Send message
+chatInput.addEventListener("keypress", function(e) {
+  if (e.key === "Enter" && chatInput.value.trim() !== "") {
+    const msg = chatInput.value.trim();
+
+    // Add user message
+    const userMsg = document.createElement("div");
+    userMsg.classList.add("chat-message", "user");
+    userMsg.textContent = msg;
+    chatContent.appendChild(userMsg);
+
+    chatInput.value = "";
+    chatContent.scrollTop = chatContent.scrollHeight;
+
+    // Simple bot reply
+    setTimeout(() => {
+      const botMsg = document.createElement("div");
+      botMsg.classList.add("chat-message", "bot");
+      botMsg.textContent = "Thanks for your message! We'll get back to you soon.";
+      chatContent.appendChild(botMsg);
+      chatContent.scrollTop = chatContent.scrollHeight;
+    }, 1000);
+  }
+});
+window.addEventListener('load', () => {
+  const video = document.querySelector('.hero-bg-video');
+
+  // delay 2 saat sebelum video muncul
+  setTimeout(() => {
+    video.style.opacity = 1;
+  }, 1000);
+});
+// ===== Last Updated =====
+document.getElementById('last-updated').textContent = (() => {
+  let now = new Date();
+  let day = String(now.getDate()).padStart(2, '0');
+  let month = String(now.getMonth() + 1).padStart(2, '0');
+  let year = now.getFullYear();
+  return `${day}/${month}/${year}`;
+})();
+
+// ===== Visitor Counter =====
+const visitorCountEl = document.getElementById('visitor-count');
+
+// Get today's date in DD/MM/YYYY
+let now = new Date();
+let day = String(now.getDate()).padStart(2, '0');
+let month = String(now.getMonth() + 1).padStart(2, '0');
+let year = now.getFullYear();
+let today = `${day}/${month}/${year}`;
+
+// ===== Lifetime Visitors =====
+let lifetimeVisitors = parseInt(localStorage.getItem('lifetimeVisitors')) || 0;
+lifetimeVisitors++;
+localStorage.setItem('lifetimeVisitors', lifetimeVisitors);
+
+// ===== Daily Visitors =====
+let lastVisitDay = localStorage.getItem('lastVisitDay');
+let dailyVisitors = 0;
+
+if(lastVisitDay === today){
+  dailyVisitors = parseInt(localStorage.getItem('dailyVisitors')) || 0;
+  dailyVisitors++;
+} else {
+  dailyVisitors = 1; // reset for new day
+}
+
+localStorage.setItem('dailyVisitors', dailyVisitors);
+localStorage.setItem('lastVisitDay', today);
+
+// Display counts
+visitorCountEl.innerHTML = `
+  Lifetime Visitors: ${lifetimeVisitors} (Data collected: ${today})<br>
+  Today's Visitors: ${dailyVisitors}
+`;
+</script>
+
+</body>
+</html>

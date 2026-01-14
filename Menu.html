@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  
+  <title>Ayam Penyet Crispy - Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav-modern">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <img src="logo.jpg" alt="Logo">
+      <span>Ayam Penyet Crispy</span>
+    </div>
+<ul class="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+
+  <!-- DROPDOWN MENU -->
+  <li class="dropdown">
+    <a href="menu.html" class="active">Menu ▾</a>
+    <ul class="dropdown-menu">
+      <li><a href="menu.html#penyet-crispy">Penyet Crispy</a></li>
+      <li><a href="menu.html#gepuk-crispy">Gepuk Crispy</a></li>
+      <li><a href="menu.html#soto-bakso">Soto & Bakso</a></li>
+      <li><a href="menu.html#drinks">Drinks</a></li>
+      <li><a href="menu.html#sambal">Sambal</a></li>
+    </ul>
+  </li>
+
+  <li><a href="location.html">Location</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
+     <!-- Social Media Icons -->
+    <div class="nav-social">
+      <a href="https://www.tiktok.com/@ayampenyetcrispyapc?_r=1" target="_blank" rel="noopener">
+        <img src="tiktok.png" alt="TikTok">
+      </a>
+      <a href="https://wa.link/loiij1" target="_blank" rel="noopener">
+        <img src="whatsapp.png" alt="Whatsapp">
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<main>
+
+<!-- MENU -->
+<div class="menu-sort">
+  <label for="sort-options">Sort by:</label>
+  <select id="sort-options">
+    <option value="default">Default</option>
+    <option value="price-asc">Price: Low → High</option>
+    <option value="price-desc">Price: High → Low</option>
+    <option value="name-asc">Name: A → Z</option>
+    <option value="name-desc">Name: Z → A</option>
+  </select>
+</div>
+
+<!-- PENYET CRISPY -->
+<section class="menu-section" id="penyet-crispy">
+  <h3>Penyet Crispy</h3>
+  <div class="flip-grid">
+
+    <div class="flip-card add-to-cart" data-name="Ayam Crispy" data-price="10.00">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="penyetayam.jpg" >
+          <h4>Ayam Crispy</h4>
+          <span class="price">RM10.00</span>
+        </div>
+        <div class="flip-card-back">
+          <p>Crispy on the outside, juicy on the inside, served with traditional spicy sambal.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card add-to-cart"  data-name="Keli Crispy" data-price="10.00">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="penyetkeli.jpg">
+          <h4>Keli Crispy</h4>
+          <span class="price">RM10.00</span>
+        </div>
+        <div class="flip-card-back">
+          <p>Crispy catfish smashed and served with bold sambal.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card add-to-cart" data-name="Talapia Crispy" data-price="13.00">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="penyettalapia.jpg">
+          <h4>Talapia Crispy</h4>
+          <span class="price">RM13.00</span>
+        </div>
+        <div class="flip-card-back">
+          <p>Golden crispy tilapia with signature sambal.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- GEPUK CRISPY -->
+<section class="menu-section" id="gepuk-crispy">
+  <h3>Gepuk Crispy</h3>
+  <div class="flip-grid">
+
+    <div class="flip-card add-to-cart" data-name="Ayam Gepuk Crispy" data-price="10.00">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="gepukayam.jpg">
+          <h4>Ayam Gepuk Crispy</h4>
+          <span class="price">RM10.00</span>
+        </div>
+        <div class="flip-card-back">
+          <p>Spicy smashed fried chicken with rich sambal.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card add-to-cart" data-name="Keli Gepuk Crispy" data-price="10.00">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="gepukkeli.jpg">
+          <h4> Keli Gepuk Crispy </h4>
+          <span class="price">RM10.00</span>
+        </div>
+        <div class="flip-card-back">
+          <p>Crispy catfish gepuk with bold sambal kick.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card add-to-cart" data-name="Talapia Gepuk Crispy" data-price="13.00">
+        <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="gepuktalapia.jpg">
+          <h4>Talapia Gepuk Crispy</h4>
+          <span class="price">RM13.00</span>
+        </div>
+        <div class="flip-card-back">
+          <p>Smashed crispy tilapia with special sambal.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SOTO & BAKSO -->
+<section class="menu-section" id="soto-bakso">
+  <h3>Soto & Bakso</h3>
+  <div class="flip-grid center-grid"> 
+
+    <div class="flip-card add-to-cart" data-name="Soto" data-price="5.00"> 
+        <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="soto.jpg">
+          <h4>Soto</h4>
+          <span class="price">RM5.00</span>
+        </div>
+        <div class="flip-card-back">
+          <p>Traditional aromatic soup with comforting spices.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flip-card add-to-cart" data-name="Bakso" data-price="5.00">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="bakso.jpg">
+          <h4>Bakso</h4>
+          <span class="price">RM5.00</span>
+        </div>
+        <div class="flip-card-back">
+          <p>Juicy meatballs in rich flavorful broth.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- DRINKS -->
+<section class="menu-section" id="drinks">
+  <h3>Drinks</h3>
+  <div class="flip-grid">
+
+    <div class="flip-card add-to-cart" data-name="Teh Ais" data-price="3.00">
+      <div class="flip-card-inner">
+      <div class="flip-card-front">
+      <img src="teh.jpg">
+      <h4>Teh Ais</h4>
+      <span class="price">RM3.00</span>
+    </div>
+    <div class="flip-card-back"><p>Refreshing iced tea.</p>
+    </div>
+  </div>
+</div>
+
+    <div class="flip-card add-to-cart" data-name="Teh O Limau" data-price="2.00">
+      <div class="flip-card-inner">
+      <div class="flip-card-front">
+      <img src="tehlimau.jpg">
+      <h4>Teh O Limau</h4>
+      <span class="price">RM2.00</span>
+    </div><div class="flip-card-back">
+      <p>Tea with citrus freshness.</p>
+    </div>
+  </div>
+</div>
+
+    <div class="flip-card add-to-cart" data-name="Bandung Ais" data-price="3.00">
+      <div class="flip-card-inner">
+      <div class="flip-card-front">
+      <img src="bandung.jpg">
+      <h4>Bandung Ais</h4>
+      <span class="price">RM3.00</span>
+    </div>
+    <div class="flip-card-back">
+      <p>Classic rose milk drink.</p>
+    </div>
+  </div>
+</div>
+
+    <div class="flip-card dd-to-cart" data-name="Jus Oren" data-price="3.00">
+      <div class="flip-card-inner">
+      <div class="flip-card-front">
+      <img src="oren.jpg">
+      <h4>Jus Oren</h4>
+      <span class="price">RM3.00</span>
+    </div>
+    <div class="flip-card-back">
+      <p>Fresh orange juice.</p>
+    </div>
+  </div>
+</div>
+
+    <div class="flip-card add-to-cart" data-name="Sirap Ais" data-price="1.00">
+      <div class="flip-card-inner">
+      <div class="flip-card-front">
+      <img src="sirap.jpg">
+      <h4>Sirap Ais</h4>
+      <span class="price">RM1.00</span>
+    </div>
+    <div class="flip-card-back">
+      <p>Simple and refreshing.</p>
+    </div>
+  </div>
+</div>
+
+     <div class="flip-card add-to-cart" data-name="Laici Ais" data-price="3.00">
+      <div class="flip-card-inner">
+      <div class="flip-card-front">
+      <img src="laici.jpg">
+      <h4>Laici Ais</h4>
+      <span class="price">RM3.00</span>
+    </div>
+    <div class="flip-card-back">
+      <p>Sweet lychee drink.</p>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+<!-- SAMBAL -->
+<section class="menu-section" id=sambal>
+  <h3>Sambal</h3>
+  <div class="flip-grid">
+
+    <div class="flip-card add-to-cart" data-name="Sambal Gepuk" data-price="10.00">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="sambalgepuk.jpg">
+          <h4>Sambal Gepuk</h4>
+          <span class="price">RM10.00</span>
+        </div>
+        <div class="flip-card-back">
+          <p>Bold sambal with aromatic onion richness.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card add-to-cart" data-name="Sambal Penyet" data-price="10.00">
+       <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="sambalpenyet.jpg">
+          <h4>Sambal Penyet</h4>
+          <span class="price">RM10.00</span>
+        </div>
+        <div class="flip-card-back">
+          <p>Freshly pounded fiery traditional sambal.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card add-to-cart" data-name="Sambal Kicap" data-price="10.00">
+       <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="sambalkicap.jpg">
+          <h4>Sambal Kicap</h4>
+          <span class="price">RM10.00</span>
+        </div>
+        <div class="flip-card-back">
+          <p>Sweet, spicy soy-based sambal blend.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<div id="cart" class="cart-box">
+  <h3>Shopping Cart</h3>
+  <ul id="cart-items"></ul>
+  <p>Total: RM<span id="cart-total">0.00</span></p>
+  <button id="pay-counter-btn">Pay at Counter</button>
+</div>
+
+
+
+
+
+
+</main>
+
+<footer class="footer-business">
+  <div class="footer-container">
+
+    <!-- ABOUT -->
+    <div class="footer-box">
+      <h4>Ayam Penyet Crispy</h4>
+      <p>
+        A&A Laris Resources is a registered F&B business established in 2023,
+        offering crispy ayam penyet, gepuk, and authentic local flavors.
+      </p>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-box">
+      <h4>Contact Us</h4>
+      <p>📍 Lot 831 Kg. Sungai Hala,<br>Jalan Lama Pasir Puteh,<br>18500 Machang, Kelantan</p>
+      <p>📞 013-9994070</p>
+      <p>✉️ ayampenyetcrispy@gmail.com</p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-box">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- OPENING HOURS -->
+    <div class="footer-box">
+      <h4>Opening Hours</h4>
+      <p>Monday – Sunday</p>
+      <p>12:00 PM – 6:00 PM</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>Created: 1 Jan 2025</p>
+    <p>Last Updated: <span id="last-updated"></span></p>
+    <p id="visitor-count">Visitors: 0</p>
+    <p>&copy; 2025 A&A Laris Resources | Ayam Penyet Crispy | For Educational Purposes Only</p>
+  </div>
+</footer>
+
+
+
+<!-- Floating Cart Button -->
+<div id="cart-button">
+  🛒 <span id="cart-count">0</span>
+</div>
+
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script>
+const cart = [];
+const cartItems = document.getElementById("cart-items");
+const cartTotal = document.getElementById("cart-total");
+const cartButton = document.getElementById("cart-button");
+const cartBox = document.getElementById("cart");
+const cartCount = document.getElementById("cart-count");
+
+// Update cart UI
+function updateCart() {
+  cartItems.innerHTML = "";
+  let total = 0;
+  let totalItems = 0;
+
+  cart.forEach((item, index) => {
+    total += item.price * item.quantity;
+    totalItems += item.quantity;
+
+    const li = document.createElement("li");
+    li.style.display = "flex";
+    li.style.justifyContent = "space-between";
+    li.style.alignItems = "center";
+
+    const itemText = document.createElement("span");
+    itemText.textContent = `${item.name} x${item.quantity} - RM${(item.price * item.quantity).toFixed(2)}`;
+
+    const btnContainer = document.createElement("span");
+
+    // Minus button
+    const minusBtn = document.createElement("button");
+    minusBtn.textContent = "➖";
+    minusBtn.classList.add("cart-btn");
+    minusBtn.addEventListener("click", () => {
+      item.quantity -= 1;
+      if (item.quantity <= 0) {
+        cart.splice(index, 1); // remove item if quantity is 0
+      }
+      updateCart();
+    });
+
+    // Plus button
+    const plusBtn = document.createElement("button");
+    plusBtn.textContent = "➕";
+    plusBtn.classList.add("cart-btn");
+    plusBtn.addEventListener("click", () => {
+      item.quantity += 1;
+      updateCart();
+    });
+
+    btnContainer.appendChild(minusBtn);
+    btnContainer.appendChild(plusBtn);
+
+    li.appendChild(itemText);
+    li.appendChild(btnContainer);
+    cartItems.appendChild(li);
+  });
+
+  cartTotal.textContent = total.toFixed(2);
+  cartCount.textContent = totalItems;
+
+  if (cart.length === 0) {
+    cartBox.style.display = "none";
+  }
+}
+
+// Add item to cart
+function addToCart(name, price) {
+  const existing = cart.find(item => item.name === name);
+
+  if (existing) {
+    existing.quantity += 1;
+  } else {
+    cart.push({ name, price, quantity: 1 });
+  }
+
+  updateCart();
+  cartBox.style.display = "block";
+}
+
+// Click event for menu items
+document.querySelectorAll(".add-to-cart").forEach(item => {
+  item.addEventListener("click", () => {
+    const name = item.dataset.name;
+    const price = parseFloat(item.dataset.price);
+    addToCart(name, price);
+  });
+});
+
+// Toggle cart visibility
+cartButton.addEventListener("click", () => {
+  if (cartBox.style.display === "block") {
+    cartBox.style.display = "none";
+  } else {
+    if (cart.length > 0) cartBox.style.display = "block";
+  }
+});
+const payBtn = document.getElementById("pay-counter-btn");
+
+payBtn.addEventListener("click", () => {
+  if(cart.length === 0){
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Your cart is empty!',
+    });
+    return;
+  }
+
+  // Generate receipt HTML
+  let receiptHTML = '<div>';
+  cart.forEach(item => {
+    receiptHTML += `<div class="receipt-item">
+                      <span>${item.name} x${item.quantity}</span>
+                      <span>RM${(item.price * item.quantity).toFixed(2)}</span>
+                    </div>`;
+  });
+  receiptHTML += `<hr><div class="receipt-item"><strong>Total</strong><strong>RM${cart.reduce((sum, i) => sum + i.price*i.quantity, 0).toFixed(2)}</strong></div></div>`;
+
+  // SweetAlert2 popup
+  Swal.fire({
+    title: 'Order Sent!',
+    html: `<p>Your order successfully sent to the kitchen!</p>${receiptHTML}`,
+    icon: 'success',
+    showCloseButton: true,
+    confirmButtonText: 'OK',
+  });
+
+  // Clear cart after order
+  cart.length = 0;
+  updateCart();
+});
+
+const sortSelect = document.getElementById("sort-options");
+const flipGrids = document.querySelectorAll(".flip-grid");
+
+sortSelect.addEventListener("change", () => {
+  const option = sortSelect.value;
+
+  flipGrids.forEach(grid => {
+    const cards = Array.from(grid.children);
+    let sortedCards = cards.slice(); // create a copy
+
+    if(option === "price-asc") {
+      sortedCards.sort((a, b) => parseFloat(a.dataset.price) - parseFloat(b.dataset.price));
+    } else if(option === "price-desc") {
+      sortedCards.sort((a, b) => parseFloat(b.dataset.price) - parseFloat(a.dataset.price));
+    } else if(option === "name-asc") {
+      sortedCards.sort((a, b) => a.dataset.name.localeCompare(b.dataset.name));
+    } else if(option === "name-desc") {
+      sortedCards.sort((a, b) => b.dataset.name.localeCompare(a.dataset.name));
+    }
+
+    // Clear current grid and append sorted cards
+    grid.innerHTML = "";
+    sortedCards.forEach(card => grid.appendChild(card));
+  });
+});
+// ===== Last Updated =====
+document.getElementById('last-updated').textContent = (() => {
+  let now = new Date();
+  let day = String(now.getDate()).padStart(2, '0');
+  let month = String(now.getMonth() + 1).padStart(2, '0');
+  let year = now.getFullYear();
+  return `${day}/${month}/${year}`;
+})();
+
+// ===== Visitor Counter =====
+const visitorCountEl = document.getElementById('visitor-count');
+
+// Get today's date in DD/MM/YYYY
+let now = new Date();
+let day = String(now.getDate()).padStart(2, '0');
+let month = String(now.getMonth() + 1).padStart(2, '0');
+let year = now.getFullYear();
+let today = `${day}/${month}/${year}`;
+
+// ===== Lifetime Visitors =====
+let lifetimeVisitors = parseInt(localStorage.getItem('lifetimeVisitors')) || 0;
+lifetimeVisitors++;
+localStorage.setItem('lifetimeVisitors', lifetimeVisitors);
+
+// ===== Daily Visitors =====
+let lastVisitDay = localStorage.getItem('lastVisitDay');
+let dailyVisitors = 0;
+
+if(lastVisitDay === today){
+  dailyVisitors = parseInt(localStorage.getItem('dailyVisitors')) || 0;
+  dailyVisitors++;
+} else {
+  dailyVisitors = 1; // reset for new day
+}
+
+localStorage.setItem('dailyVisitors', dailyVisitors);
+localStorage.setItem('lastVisitDay', today);
+
+// Display counts
+visitorCountEl.innerHTML = `
+  Lifetime Visitors: ${lifetimeVisitors} (Data collected: ${today})<br>
+  Today's Visitors: ${dailyVisitors}
+`;
+
+
+
+</script>
+
+
+</body>
+</html>

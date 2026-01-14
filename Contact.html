@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  
+  <title>Ayam Penyet Crispy - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav-modern">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <img src="logo.jpg" alt="Logo">
+      <span>Ayam Penyet Crispy</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="location.html">Location</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+
+     <!-- Social Media Icons -->
+    <div class="nav-social">
+      <a href="https://www.tiktok.com/@ayampenyetcrispyapc?_r=1" target="_blank" rel="noopener">
+        <img src="tiktok.png" alt="TikTok">
+      </a>
+      <a href="https://wa.link/loiij1" target="_blank" rel="noopener">
+        <img src="whatsapp.png" alt="Whatsapp">
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p class="highlight-text">We’d love to hear from you! Reach out for orders, inquiries, or collaborations.</p>
+      
+      <div class="info-cards">
+        <div class="card">
+          <h4>📍 Location</h4>
+          <p>Lot 831 Kg. Sungai Hala,<br>Jalan Lama Pasir Puteh,<br>18500 Machang, Kelantan</p>
+        </div>
+
+        <div class="card">
+          <h4>📞 Phone</h4>
+          <p><a href="tel:0139994070">013-9994070</a></p>
+        </div>
+
+        <div class="card">
+          <h4>✉️ Email</h4>
+          <p><a href="mailto:ayampenyetcrispy@gmail.com">ayampenyetcrispy@gmail.com</a></p>
+        </div>
+
+     <div class="card">
+      <h4>⏰ Opening Hours</h4>
+    <table>
+      <thead>
+      <tr>
+        <th>Day</th>
+        <th>Time</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Monday - Sunday</td>
+        <td>12:00 PM – 6:00 PM</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+
+    <!-- Contact Form Below -->
+    <div class="contact-form-container">
+      <form class="contact-form">
+        <h2>Send Us a Message</h2>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- Floating Chatbox -->
+<div id="chatbox">
+  <div id="chat-header">💬 Chat with us</div>
+  <div id="chat-content">
+    <div class="chat-message bot">Hi! How can I help you today?</div>
+  </div>
+  <input type="text" id="chat-input" placeholder="Type a message..." />
+</div>
+
+<footer class="footer-business">
+  <div class="footer-container">
+
+    <!-- ABOUT -->
+    <div class="footer-box">
+      <h4>Ayam Penyet Crispy</h4>
+      <p>
+        A&A Laris Resources is a registered F&B business established in 2023,
+        offering crispy ayam penyet, gepuk, and authentic local flavors.
+      </p>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-box">
+      <h4>Contact Us</h4>
+      <p>📍 Lot 831 Kg. Sungai Hala,<br>Jalan Lama Pasir Puteh,<br>18500 Machang, Kelantan</p>
+      <p>📞 013-9994070</p>
+      <p>✉️ ayampenyetcrispy@gmail.com</p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-box">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- OPENING HOURS -->
+    <div class="footer-box">
+      <h4>Opening Hours</h4>
+      <p>Monday – Sunday</p>
+      <p>12:00 PM – 6:00 PM</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>Created: 1 Jan 2025</p>
+    <p>Last Updated: <span id="last-updated"></span></p>
+    <p id="visitor-count">Visitors: 0</p>
+    <p>&copy; 2025 A&A Laris Resources | Ayam Penyet Crispy | For Educational Purposes Only</p>
+  </div>
+</footer>
+
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script>
+window.addEventListener("scroll", () => {
+  const nav = document.querySelector(".nav-modern");
+  nav.classList.toggle("scrolled", window.scrollY > 50);
+});
+const chatHeader = document.getElementById("chat-header");
+const chatBox = document.getElementById("chatbox");
+const chatContent = document.getElementById("chat-content");
+const chatInput = document.getElementById("chat-input");
+
+// Toggle chat open/close
+chatHeader.addEventListener("click", () => {
+  if (chatContent.style.display === "none") {
+    chatContent.style.display = "flex";
+    chatInput.style.display = "block";
+  } else {
+    chatContent.style.display = "none";
+    chatInput.style.display = "none";
+  }
+});
+
+// Send message
+chatInput.addEventListener("keypress", function(e) {
+  if (e.key === "Enter" && chatInput.value.trim() !== "") {
+    const msg = chatInput.value.trim();
+
+    // Add user message
+    const userMsg = document.createElement("div");
+    userMsg.classList.add("chat-message", "user");
+    userMsg.textContent = msg;
+    chatContent.appendChild(userMsg);
+
+    chatInput.value = "";
+    chatContent.scrollTop = chatContent.scrollHeight;
+
+    // Simple bot reply
+    setTimeout(() => {
+      const botMsg = document.createElement("div");
+      botMsg.classList.add("chat-message", "bot");
+      botMsg.textContent = "Thanks for your message! We'll get back to you soon.";
+      chatContent.appendChild(botMsg);
+      chatContent.scrollTop = chatContent.scrollHeight;
+    }, 1000);
+  }
+});
+// Contact Form SweetAlert
+const contactForm = document.querySelector('.contact-form');
+
+contactForm.addEventListener('submit', function(e){
+  e.preventDefault(); // cegah reload page
+
+  // Ambil nilai form (optional)
+  const name = this.name.value;
+  const email = this.email.value;
+  const message = this.message.value;
+
+  // SweetAlert
+  Swal.fire({
+    icon: 'success',
+    title: 'Message Sent!',
+    html: `Thank you <strong>${name}</strong>!<br>Your message has been sent successfully.`,
+    confirmButtonColor: '#FFD54F',
+    confirmButtonText: 'OK'
+  });
+
+  // Reset form
+  this.reset();
+});
+// ===== Last Updated =====
+document.getElementById('last-updated').textContent = (() => {
+  let now = new Date();
+  let day = String(now.getDate()).padStart(2, '0');
+  let month = String(now.getMonth() + 1).padStart(2, '0');
+  let year = now.getFullYear();
+  return `${day}/${month}/${year}`;
+})();
+
+// ===== Visitor Counter =====
+const visitorCountEl = document.getElementById('visitor-count');
+
+// Get today's date in DD/MM/YYYY
+let now = new Date();
+let day = String(now.getDate()).padStart(2, '0');
+let month = String(now.getMonth() + 1).padStart(2, '0');
+let year = now.getFullYear();
+let today = `${day}/${month}/${year}`;
+
+// ===== Lifetime Visitors =====
+let lifetimeVisitors = parseInt(localStorage.getItem('lifetimeVisitors')) || 0;
+lifetimeVisitors++;
+localStorage.setItem('lifetimeVisitors', lifetimeVisitors);
+
+// ===== Daily Visitors =====
+let lastVisitDay = localStorage.getItem('lastVisitDay');
+let dailyVisitors = 0;
+
+if(lastVisitDay === today){
+  dailyVisitors = parseInt(localStorage.getItem('dailyVisitors')) || 0;
+  dailyVisitors++;
+} else {
+  dailyVisitors = 1; // reset for new day
+}
+
+localStorage.setItem('dailyVisitors', dailyVisitors);
+localStorage.setItem('lastVisitDay', today);
+
+// Display counts
+visitorCountEl.innerHTML = `
+  Lifetime Visitors: ${lifetimeVisitors} (Data collected: ${today})<br>
+  Today's Visitors: ${dailyVisitors}
+`;
+</script>
+
+</body>
+</html>
